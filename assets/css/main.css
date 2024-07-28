@@ -41,7 +41,54 @@ body {
 ol, ul {
 	list-style: none;
 }
+/* Styles for the new nav bar */
+.topnav {
+    background-color: #0e291cf5;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the nav bar stays above other content */
+	display: flex;
+	justify-content: center; /* Center the nav links */
+}
 
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600; /* Adjusted to match the original font-weight */
+    position: relative; /* Added for the ::before pseudo-element */
+}
+
+.topnav a:hover {
+    background-color: #1bb67d;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #16df95;
+    color: white;
+}
+
+.topnav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #165366;
+    position: absolute;
+    top: 0;
+    width: 0%;
+	left: 0;
+    transition: all ease-in-out 250ms;
+}
+
+.topnav a:hover::before {
+    width: 100%;
+}
 blockquote, q {
 	quotes: none;
 }
