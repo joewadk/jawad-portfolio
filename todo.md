@@ -1,0 +1,3 @@
+- [ ] fix deployment
+- [ ] figure out what /app is
+- [ ] push workflow/nextjs.yml
