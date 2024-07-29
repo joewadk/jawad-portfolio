@@ -29,10 +29,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 hr.solid {
-  border-top: 2px solid #1e6e6181;
+  border-top: 2px solid #0d635481;
 }
 hr.solid2 {
-	border-top: 2px solid #14473f4b;
+	border-top: 2px solid #0d635481;
   }
 body {
 	line-height: 1;
@@ -43,7 +43,7 @@ ol, ul {
 }
 /* Styles for the new nav bar */
 .topnav {
-    background-color: #0e291cf5;
+    background-color: #085530f5;
     overflow: hidden;
     position: sticky;
     top: 0;
@@ -65,7 +65,7 @@ ol, ul {
 }
 
 .topnav a:hover {
-    background-color: #1bb67d;
+    background-color: #168a5f;
     color: black;
 }
 
@@ -156,7 +156,44 @@ input, select, textarea {
 		font-weight: 300;
 		line-height: 1.65em;
 	}
+	.collapsible {
+		background-color: #f1f1f1;
+		color: #444;
+		cursor: pointer;
+		padding: 5px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 20px;
 
+	}
+	
+	.active, .collapsible:hover {
+		background-color: #ccc;
+	}
+	
+	.content {
+		padding: 10px 18px;
+		display: none;
+		overflow: hidden;
+		background-color: #f9f9f9;
+		text-align: left;
+	}
+	
+	.image-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 3em;
+	}
+	
+	.image-container img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
