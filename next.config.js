@@ -13,6 +13,10 @@ module.exports = {
           source: '/exp',
           destination: '/exp.html',
         },
+        {
+        source: '/app',
+          destination: '/pages/app.js'
+        }
       ];
     },
   };
