@@ -7,8 +7,9 @@ const Redirect = () => {
 
   useEffect(() => {
     const { pathname } = router;
-    if (pathname !== '/index.html') {
-      router.push('/index.html');
+    if (pathname === '/') {
+      // Use window.location.href to redirect to a static HTML file
+      window.location.href = '/index.html';
     }
   }, [router]);
 
@@ -16,3 +17,4 @@ const Redirect = () => {
 };
 
 export default Redirect;
+
